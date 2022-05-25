@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Alert, StyleSheet, View } from 'react-native';
+import { Alert, StyleSheet, View, ScrollView } from 'react-native';
 import { useNavigation } from "@react-navigation/native"
 
 import FlatButton from '../UI/FlatButton';
@@ -53,6 +53,7 @@ function AuthContent({ isLogin, onAuthenticate }) {
   }
 
   return (
+      <ScrollView>
     <View style={styles.authContent}>
       <AuthForm
         isLogin={isLogin}
@@ -65,6 +66,7 @@ function AuthContent({ isLogin, onAuthenticate }) {
         </FlatButton>
       </View>
     </View>
+    </ScrollView>
   );
 }
 

@@ -1,5 +1,4 @@
 import { View, Text, TextInput, StyleSheet } from 'react-native';
-
 import { Colors } from '../../constants/styles';
 
 function Input({
@@ -17,7 +16,6 @@ function Input({
       </Text>
       <TextInput
         style={[styles.input, isInvalid && styles.inputInvalid]}
-        autoCapitalize={false}
         autoCapitalize="none"
         keyboardType={keyboardType}
         secureTextEntry={secure}
